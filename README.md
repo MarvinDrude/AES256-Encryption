@@ -4,7 +4,7 @@ Small static class to encrypt/decrypt bytes with given password bytes
 Might need to change the password array destroying part
 
 Usage:
-´´´C#
+```C#
 
 byte[] pw = Encoding.ASCII.GetBytes("snmvd9348sd+#^sda23c");
 byte[] test = Encoding.ASCII.GetBytes("This is a test");
@@ -31,4 +31,4 @@ if(Encryption.VerifyEarly(encrypted, pw)) {
 
 }
 
-´´´
+```
