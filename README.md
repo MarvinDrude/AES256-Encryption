@@ -17,7 +17,7 @@ pw = Encoding.ASCII.GetBytes("snmvd9348sd+#^sda23c");
 
 if(Encryption.VerifyEarly(encrypted, pw)) {
 
-  //could be the right password (test without comparing decrypting and comparing hash)
+  //could be the right password (test without comparing decrypted and hash)
   pw = Encoding.ASCII.GetBytes("snmvd9348sd+#^sda23c");
   
   if(Encryption.VerifyLate(encrypted, pw)) {
